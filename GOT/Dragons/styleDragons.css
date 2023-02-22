@@ -1,0 +1,183 @@
+body {
+    background-image: url("images/meereen.jpg");
+    font-family: "Comforter", Comforter Brush, Sans-serif;
+}
+main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cols{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    width: 20%;
+    /*margin: 1rem;*/
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .col2{
+    /*width: 20%;*/
+    /*margin: 1rem;*/
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .container{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  .front,
+  .back{
+    background-size: cover;
+    box-shadow: 0px 0px 15px 0px rgba(136,136,136,1);
+    border-radius: 10px;
+    background-position: center;
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  
+  .front:after{
+    position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: block;
+      opacity: .6;
+      backface-visibility: hidden;
+      border-radius: 10px;
+  }
+  .container:hover .front,
+  .container:hover .back{
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1),
+  }
+  
+  .back{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+  
+  .inner{
+      transform: translateY(-50%) translateZ(60px) scale(0.94);
+      top: 50%;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 2rem;
+      box-sizing: border-box;
+      outline: 1px solid transparent;
+      perspective: inherit;
+      perspective: inherit;
+      z-index: 2;
+  }
+  
+  .container .back{
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+  
+  }
+  
+  .container .front{
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+  }
+  
+  .container:hover .back{
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+  }
+  
+  .container:hover .front{
+            transform: rotateY(-180deg);
+            transform-style: preserve-3d;
+  }
+  .front .inner p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .front .inner p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+  }
+  
+  .front .inner span{
+    color: rgba(255,255,255,0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+  }
+  
+  @media screen and (max-width: 64rem){
+    .col{
+      width: calc(33.333333% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 48rem){
+    .col{
+      width: calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 32rem){
+    .col{
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+  }
+  .inner {
+    text-shadow: #000 1px 0 10px;
+  }
+  .col1{
+    width: 60%;
+    /*margin: 1rem;*/
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .dragon {
+    display: flex;
+    justify-content: center;
+  }
+  #frontDrogon {
+    background-image: url("images/Drogon.jpg");
+  }
+  #frontRhaegal {
+    background-image: url("images/Rhaegal.jpg");
+  }
+  #frontViserion {
+    background-image: url("images/Viserion.jpg");
+  }
+
+  @media screen and (max-width: 600px) {
+    span {
+        display: none;
+    }
+  }
+  

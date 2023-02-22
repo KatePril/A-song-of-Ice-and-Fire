@@ -1,0 +1,56 @@
+body {
+    font-family: "Comforter", Comforter Brush, Sans-serif;
+    font-size: 20px;
+    display: flex;
+    background-image: url("images\\background.jpg");
+    /* align-items: center; */
+    
+}
+#leftSide {
+    width: 20%;
+}
+#mapImage {
+    width: 55%;
+    border-radius: 15px;
+}
+#rightSide {
+    width: 20%;
+}
+.paper{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    /* height: 300px; */
+    background: linear-gradient(90deg, rgba(235,185,128,1) 0%,
+     rgba(213,172,128,1) 2%,
+      rgba(213,172,128,1) 98%,
+       rgba(224,183,137,1) 100%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 31px -6px rgba(74,64,74,1);
+}
+#Map {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+@media screen and (max-width: 600px) {
+    #Map {
+        flex-direction: column;
+    }
+    #leftSide {
+        width: 100%;
+      }
+      #mapImage {
+        margin-top: 20px;
+        width: 100%;
+      }
+      #rightSide {
+        width: 100%;
+      }
+}
+
+#mapImage:hover {
+  transform: scale(1.4);
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+}

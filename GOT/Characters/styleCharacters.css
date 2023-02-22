@@ -1,0 +1,80 @@
+body {
+    background-image: url("images/winterfall.jpg");
+    font-family: "Comforter", Comforter Brush, Sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+}
+h2 {
+    text-align: center;
+    font-size: 26px;
+    text-shadow: #ffffff 1px 0 10px;
+}
+.img {
+    width: 232px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+}
+#arya {
+    background-image: url("images/Aria.jpg");
+}
+#arya:hover {
+    background-image: url("images/Aria2.jpg");
+}
+#sansa {
+    background-image: url("images/Sansa.jpg");
+}
+#sansa:hover {
+    background-image: url("images/Sansa2.jpg");
+}
+#bran {
+    background-image: url("images/Bran.jpg");
+}
+#bran:hover {
+    background-image: url("images/Bran2.jpg");
+}
+#jon {
+    background-image: url("images/John.jpg");
+}
+#jon:hover {
+    background-image: url("images/John2.jpg");
+}
+#tyrion {
+    background-image: url("images/Tirion.jpg");
+}
+#tyrion:hover {
+    background-image: url("images/Tirion2.jpg");
+}
+#jaime {
+    background-image: url("images/Jaime.jpg");
+}
+#jaime:hover {
+    background-image: url("images/Jaime2.jpg");
+}
+#cersei {
+    background-image: url("images/Cersei.jpg");
+}
+#cersei:hover {
+    background-image: url("images/Cersei2.jpg");
+}
+#daenerys {
+    background-image: url("images/Deny.jpg");
+}
+#daenerys:hover {
+    background-image: url("images/Deny2.jpg");
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

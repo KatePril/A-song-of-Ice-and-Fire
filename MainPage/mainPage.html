@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opening page</title>
+  <link rel="stylesheet" href="styleMainPageTop.css">
+  <link rel="stylesheet" href="styleMainPageBottom.css">
+</head>
+<body>
+  <section class="skewed" id="wrap">
+    <div class="layer bottom">
+      <div class="content-wrap">
+        <a href="../HOD/HOD.html" target="_blank">
+          <img src="images\HouseOfDragon.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="layer top">
+      <div class="content-wrap">
+        <a href="../GOT/GOT.html" target="_blank">
+          <img src="images\GameOfThrones.jfif" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="handle"></div>
+  </section>
+
+  <section id="for_other_references">
+    <a href="..\Map\mapPage.html" target="_blank" class="a_bottom">
+      <img src="images\Map.jpg" id="map">
+    </a>
+    <div id="feedback">
+      <h2 id="feedback_header">Please leave your feedback here</h2>
+      <div id="form_body">
+        <div>
+          <form action="" method="post" name="myform">
+            <label for="Name">Name</label>
+            <br>
+            <input type="text" name="Name" id="Name" placeholder="Enter your name...">
+            <br>
+            <br>
+            <label for="Name">Email</label>
+            <br>
+            <input type="email" name="Email" id="Email" placeholder="Enter your email...">
+            <br>
+            <br>
+            <label for="Name">Name of the favorite character</label>
+            <br>
+            <input type="text" name="Name" id="Name" placeholder="Enter name of the favorite character...">
+            <br>
+            <br>
+            <label for="Message">Additional feedback</label>
+            <br>
+            <textarea id="Message" name="Message" rows="5" cols="33" placeholder=">Please add your feedback..."></textarea>
+            
+          </form>
+        </div>
+        <img id="NK" src="images\NK.jpg">
+      </div>
+      <div id="forbuttons" style="display: flex; justify-content: space-around;">
+        <input type="reset" name="Reset" class="send" id="Reset" value="Reset">
+        <input type="submit" name="Submit" class="send" id="Submit" value="Submit">
+      </div>
+    </div>
+  </section>
+
+  <script src="slide.js"></script>
+</body>
+</html>
